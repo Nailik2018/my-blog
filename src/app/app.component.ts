@@ -7,9 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-blog';
-  names: any[] = [
-    'kilian',
-    'kaija',
-    'peter'
+  names: string[] = [
+    'ki',
+    'ka',
+    'mi'
   ];
+  isGreen: boolean = true;
+  meineFarbe: string = "red";
+
 }
