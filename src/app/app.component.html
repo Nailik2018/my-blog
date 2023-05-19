@@ -1,7 +1,11 @@
+<app-navigation></app-navigation>
 <router-outlet></router-outlet>
-<ul>
-  <li *ngFor="let name of names first as f last as l">Name: {{name}} First: {{ f }} Last: {{ l }}</li>
-</ul>
-<p [ngClass]="{green: isGreen}">{{title}}</p>
-<p [ngClass]="{green: !isGreen}">{{title}}</p>
-<p [ngStyle]="{'color': meineFarbe, 'font-size': '20px'}">{{title}}</p>
+<div class="app-container">
+  <ul>
+    <li *ngFor="let name of names first as f last as l">Name: {{name}} First: {{ f }} Last: {{ l }}</li>
+  </ul>
+  <p [ngClass]="{green: isGreen}">{{title}}</p>
+  <p [ngClass]="{green: !isGreen}">{{title}}</p>
+  <p [ngStyle]="{'color': meineFarbe, 'font-size': '20px'}">{{title}}</p>
+</div>
+
